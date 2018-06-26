@@ -1,0 +1,20 @@
+﻿@model IEnumerable<task1.Models.Images>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <table>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="~/images/@item.ImgName" style="width:150px;height:200px"  />
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
